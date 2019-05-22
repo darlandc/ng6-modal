@@ -1,0 +1,18 @@
+<router-outlet></router-outlet>
+<div>
+  <ol>
+    <li>
+      <mat-form-field>
+        <input matInput [(ngModel)]="name" placeholder="Digite o nome do empregado:">
+      </mat-form-field>
+    </li>
+    <li>
+      <button mat-raised-button (click)="openDialog()">ABRIR MODAL</button>
+    </li>
+    <br />
+    <hr />
+    <li *ngIf="motivo">
+     Output: <p>{{motivo}}</p>
+    </li>
+  </ol>
+</div>
